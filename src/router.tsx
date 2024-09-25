@@ -9,7 +9,7 @@ import Loader from './components/Loader'
 
 const router = createBrowserRouter([
 	{
-		path: '/skatepoint-site',
+		path: '/',
 		element: <Layout />,
 		loader: Loader,
 		children: [
