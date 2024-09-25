@@ -1,0 +1,38 @@
+.count {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	text-align: center;
+}
+
+.container h2 {
+	font-size: 128px;
+	margin-bottom: 171px;
+	color: white;
+	padding: 20px 30px;
+	background: rgb(52, 52, 52, 0.4);
+	border-radius: 20px;
+}
+
+.container a {
+	color: white;
+	padding: 20px 90px;
+	background: rgb(137, 80, 70, 0.84);
+	border-radius: 41px;
+	text-decoration: none;
+	font-size: 64px;
+	transition: 0.5s;
+}
+
+.container a:hover {
+	background: rgb(91, 89, 89, 0.84);
+	transform: scale(1.05);
+	outline: solid white;
+}
+.container a:focus-visible {
+	outline: solid white;
+	transform: scale(1.05);
+}

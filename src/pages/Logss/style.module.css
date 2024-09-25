@@ -1,0 +1,68 @@
+.logs_cont {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	height: 650px;
+}
+
+.logs {
+	background: rgb(52, 52, 52, 0.4);
+	width: 650px;
+	height: 550px;
+	margin: 50px 50px;
+}
+
+.logs p {
+	color: white;
+	font-size: 32px;
+	margin: 0 20px;
+}
+
+.create_line {
+	width: 94%;
+	border-top: 3px solid white;
+	border-radius: 10px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.shake {
+	animation: shake 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+	10% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	20% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+	30% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	40% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+	50% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	60% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+	70% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	80% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+	90% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	100% {
+		transform: translate(0px, 10px) rotate(0deg);
+	}
+}
