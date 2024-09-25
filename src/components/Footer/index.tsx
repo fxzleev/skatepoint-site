@@ -11,9 +11,9 @@ const Footer = () =>{
 				</div>
 				<nav className={style.nav}>
 					<div className={style.nav_container}>
-						<Link to='/skatepoint-site/'>HOME</Link>
-						<Link to='/skatepoint-site/logs'>LOGS</Link>
-						<Link to='/skatepoint-site/support'>SUPPORT</Link>
+						<Link to='/'>HOME</Link>
+						<Link to='/logs'>LOGS</Link>
+						<Link to='/support'>SUPPORT</Link>
 						<Link to='https://www.donationalerts.com/r/annoshellor'>
 							DONATE
 						</Link>

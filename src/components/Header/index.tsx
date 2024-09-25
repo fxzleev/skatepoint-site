@@ -11,9 +11,9 @@ export const Header = () =>{
 					<img className={style.logo} src={logo_img} alt='logo' />
 				</Link>
 				<nav className={style.nav}>
-					<Link to='/skatepoint-site/'>HOME</Link>
-					<Link to='/skatepoint-site/logs'>LOGS</Link>
-					<Link to='/skatepoint-site/support'>SUPPORT</Link>
+					<Link to='/'>HOME</Link>
+					<Link to='/logs'>LOGS</Link>
+					<Link to='/support'>SUPPORT</Link>
 					<Link to='https://www.donationalerts.com/r/annoshellor'>DONATE</Link>
 				</nav>
 			</div>

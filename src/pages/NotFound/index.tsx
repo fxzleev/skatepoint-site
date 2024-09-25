@@ -6,7 +6,7 @@ const NotFound = () =>{
 		<section className={style.count}>
 			<div className={style.container}>
 				<h2>NOT FOUND</h2>
-				<Link to='/skatepoint-site/'>HOME</Link>
+				<Link to='/'>HOME</Link>
 			</div>
 		</section>
 	)

@@ -7,7 +7,7 @@ const Home = () => {
 		<section className={style.main}>
 			<div className={style.play}>
 				<img className={style.shake} src={skatepoint_img} alt='logo' />
-				<Link to='/skatepoint-site/play'>PLAY</Link>
+				<Link to='/play'>PLAY</Link>
 			</div>
 		</section>
 	)
