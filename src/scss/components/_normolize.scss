@@ -19,7 +19,7 @@ body::before {
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
   z-index: -1;
-  background: url(./assets/img/backgraundWEB.gif) center / cover no-repeat;
+  background: url('$image/backgraundWEB.gif') center / cover no-repeat;
   filter: blur(5px);
 }
 
