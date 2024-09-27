@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import style from './style.module.css'
 import { Bean } from '../../types/bean';
 
 type Props = {
@@ -8,10 +7,10 @@ type Props = {
 
 const Card: FC<Props> = ({data}) => {
   return (
-		<div id='element' className={style.card}>
-			<h2>{data.title}</h2>
-			<p>{data.version}</p>
-			<p>{data.description}</p>
+		<div id='element' className='card'>
+			<h2 className='card__title'>{data.title}</h2>
+			<p className='card__ver'>{data.version}</p>
+			<p className='card__des'>{data.description}</p>
 		</div>
 	)
 }

@@ -1,5 +1,3 @@
-import style from './style.module.css'
-import image from '../../assets/img/skatepoint.png'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import axios from 'axios'
 
@@ -38,26 +36,32 @@ const Support = () => {
 	}
 
 	return (
-		<section className={style.support_cont}>
-			<div className={style.form}>
-				<form onSubmit={handleSubmit(onSubmit)}>
-					<div className={style.formelement4}>
+		<section className='support'>
+			<div className='support__form'>
+				{isSubmitSuccessful && <p className='support__form__submitted'>Форма отправлена!</p>}
+				<form className='support__form__container' onSubmit={handleSubmit(onSubmit)}>
+					<div className='support__form__container__formelement4'>
 						<select
 							{...register('category', {
 								required: { value: true, message: 'Выберите категорию' },
 							})}
 						>
-							<option value='site'>Site</option>
-							<option value='game'>Game</option>
-							<option value='tg_bot'>TG Bot</option>
+							<option value='site'>SITE</option>
+							<option value='game'>GAME</option>
+							<option value='tg_bot'>TGBOT</option>
 						</select>
 						{errors.category && (
-							<p className={style.errors}>{errors.category.message}</p>
+							<p className='errors'>{errors.category.message}</p>
 						)}
 					</div>
-					<div className={style.formelement1}>
+					<div className='support__form__container__formelement1'>
 						<label>
-							<span>NAME: </span>
+							<p>NAME: </p>
+							{errors.user_name && (
+								<p className='errors'>
+									{errors.user_name.message}
+								</p>
+							)}
 							<input
 								type='text'
 								{...register('user_name', {
@@ -65,13 +69,15 @@ const Support = () => {
 								})}
 							/>
 						</label>
-						{errors.user_name && (
-							<p className={style.errors}>{errors.user_name.message}</p>
-						)}
 					</div>
-					<div className={style.formelement2}>
+					<div className='support__form__container__formelement2'>
 						<label>
-							<span>EMAIL: </span>
+							<p>EMAIL: </p>
+							{errors.user_email && (
+								<p className='errors'>
+									{errors.user_email.message}
+								</p>
+							)}
 							<input
 								type='email'
 								{...register('user_email', {
@@ -79,13 +85,16 @@ const Support = () => {
 								})}
 							/>
 						</label>
-						{errors.user_email && (
-							<p className={style.errors}>{errors.user_email.message}</p>
-						)}
 					</div>
-					<div className={style.formelement3}>
+					<div className='support__form__container__formelement3'>
 						<label>
-							<span>REPORT: </span>
+							<p>REPORT: </p>
+							
+							{errors.user_comment && (
+								<p className='errors'>
+									{errors.user_comment.message}
+								</p>
+							)}
 							<textarea
 								{...register('user_comment', {
 									required: { value: true, message: 'Обязательное поле!' },
@@ -96,19 +105,11 @@ const Support = () => {
 								})}
 							></textarea>
 						</label>
-						{errors.user_comment && (
-							<p className={style.errors}>{errors.user_comment.message}</p>
-						)}
 					</div>
-					<div className={style.formelement4}>
+					<div className='support__form__container__formelement4'>
 						<input type='submit' value='SEND' disabled={!isValid} />
 					</div>
 				</form>
-				{isSubmitSuccessful && (<p className={style.submitted}>Форма отправлена!</p>)}
-			</div>
-
-			<div className={style.skatepoint}>
-				<img className={style.shake} src={image} alt='logo' />
 			</div>
 		</section>
 	)

@@ -1,11 +1,10 @@
-import style from './style.module.css'
 import beans from '../../data/beans.json'
 import Card from '../Card'
 
 const Cards = () => {
   console.log(beans.items)
   return(
-    <div className={style.container}>
+    <div className="cards">
       {beans.items.map((bean)=>{
         return <Card data={bean}/>
       })}

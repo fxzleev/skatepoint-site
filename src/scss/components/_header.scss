@@ -1,0 +1,47 @@
+.header {
+  @media(max-width: 1000px){
+    &__container {
+      display: flex !important;
+      justify-content: center !important;
+      .nav {display: none !important;}
+    }
+  }
+  display: flex;
+  justify-content: center;
+  &__container {
+    background: #525050;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+      .logo{
+        margin: 0 50px;
+        &:focus-visible{
+          border: none;
+          outline: none;
+        }
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 32px;
+          margin: 0 20px;
+          padding: 10px 20px;
+          background: #6F6B6B;
+          border-radius: 40px;
+          transition: 0.1s;
+          &:hover {
+            background: rgb(137, 80, 70, 0.84);
+	          outline: solid white;
+          }
+          &:focus-visible{
+            outline: solid white;
+          }
+        }
+      }
+  }
+}

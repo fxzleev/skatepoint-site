@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom"
-import style from "./style.module.css"
 import skatepoint_img from "../../assets/img/skatepoint.png"
 
 const Footer = () =>{
   return (
-		<footer>
-			<div className={style.container}>
-				<div className={style.copy}>
+		<footer className="footer">
+			<div className="footer__container">
+				<div className="copy">
 					<span>&copy; skatepoint.ru</span>
 				</div>
-				<nav className={style.nav}>
-					<div className={style.nav_container}>
+				<nav className="nav">
+					<div className="nav__container">
 						<Link to='/'>HOME</Link>
 						<Link to='/logs'>LOGS</Link>
 						<Link to='/support'>SUPPORT</Link>
@@ -19,7 +18,7 @@ const Footer = () =>{
 						</Link>
 					</div>
 				</nav>
-				<div className={style.about}>
+				<div className="about">
 					<img src={skatepoint_img} alt='logo' />
 					<p>
 						<span>SkatePoint</span> - это увлекательный проект, созданный
