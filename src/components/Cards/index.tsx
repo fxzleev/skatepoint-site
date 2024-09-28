@@ -15,7 +15,7 @@ const Cards = () => {
     try {
       setIsError(false)
       setIsLoading(true)
-      const req = await fetch('src/data/beans.json')
+      const req = await fetch('https://raw.githubusercontent.com/fxzleev/skatepoint-site/refs/heads/main/src/data/beans.json')
       const data = await req.json();
       setIsLoading(false)
       setAllBeans(data.items)
