@@ -3,4 +3,5 @@ export type Bean = {
 	title: string,
   version: string,
 	description: string,
+	imageUrl: string,
 }

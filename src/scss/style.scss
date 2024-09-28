@@ -2,11 +2,18 @@
 './components/activ_nav',
 './components/header',
 './components/footer',
-'./components/normolize';
+'./components/normolize',
+'./components/loader',
+'./components/error',
+'./components/burgermenu',
+'./components/navmob',
+'./components/navdesk'
+;
 
 @import
 './page/home',
 './page/logs',
+'./page/admin',
 './page/notFound',
 './page/play',
 './page/support';

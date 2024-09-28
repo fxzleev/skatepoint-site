@@ -6,7 +6,7 @@
       .nav {display: none !important;}
       }  
     }
-  @media (max-width: 900px){
+  @media (max-width: 1000px){
     & {
       display: none;
     }
@@ -41,6 +41,15 @@
           padding: 10px 20px;
           background: #6F6B6B;
           border-radius: 40px;
+          transition: 0.5s;
+          &:hover {
+            outline: 2px solid white;
+            background: rgb(137, 80, 70, 0.84)
+          }
+          &:focus-visible {
+            outline: 2px solid white; 
+            background: rgb(137, 80, 70, 0.84)
+          }
         }
       }
     }

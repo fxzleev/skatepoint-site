@@ -1,0 +1,35 @@
+@media(max-width: 1000px){
+  .navdesk {
+    display: none !important;
+  }
+};
+
+.navdesk {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &__cont {
+    width: max-content;
+
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #6F6B6B;
+    border-radius: 40px;
+    transition: 0.5s;
+    &:hover {
+      outline: 2px solid white;
+      background: rgb(137, 80, 70, 0.84)
+    }
+    &:focus-visible {
+      outline: 2px solid white; 
+      background: rgb(137, 80, 70, 0.84);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.burger {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 10;
+  input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  &__hamburger_lines {
+    height: 40px;
+    width: 40px;
+    top: 0px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  input[type="checkbox"]:checked ~ .hamburger_lines .line1 {
+  background: white;
+  transform: rotate(45deg);
+  }
+  input[type="checkbox"]:checked ~ .hamburger_lines .line2 {
+  transform: scaleY(0);
+  }
+  input[type="checkbox"]:checked ~ .hamburger_lines .line3 {
+  background: white;
+  transform: rotate(-45deg);
+  }
+}

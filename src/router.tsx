@@ -6,6 +6,7 @@ import Logss from './pages/Logss'
 import Support from './pages/Support'
 import Layout from './components/Layout'
 import Loader from './components/Loader'
+import Admin from './pages/Admin'
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 			{ index: true, element: <Home /> },
 			{ path: 'play', element: <Play /> },
 			{ path: 'logs', element: <Logss /> },
+			{ path: 'admin', element: <Admin /> },
 			{ path: 'support', element: <Support /> },
 			{ path: '*', element: <NotFound /> },
 		],

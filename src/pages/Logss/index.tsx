@@ -7,7 +7,7 @@ const Logss = () => {
 				<h2 className='logs__cont__title'>
 					LOGS <div className='logs__cont__title__line'></div>
 				</h2>
-				<Cards/>
+				<Cards />
 			</div>
 		</section>
 	)

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const NotFound = () =>{
   return (
-		<section className="count">
-			<div className="container">
+		<section className='notfound'>
+			<div className='notfound__container'>
 				<h2>NOT FOUND</h2>
 				<Link to='/'>HOME</Link>
 			</div>

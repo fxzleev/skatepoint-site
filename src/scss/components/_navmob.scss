@@ -1,0 +1,64 @@
+.container_mob {
+  min-height: 50px;
+  position: relative;
+  &__wrapper {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    animation: visible 0.5s linear;
+    background: #525050;
+    &__nav {
+      margin: 0;
+      display: grid;
+      gap: 20px;
+      place-items: center;
+      a {
+        height: 40px;
+        margin: 0;
+        padding: 5px 20px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 100vw;
+        border-radius: 0;
+        outline: none;
+        background: #6F6B6B;
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+      }
+      &__about {
+        margin-top: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 30px;
+          margin-bottom: 21px;
+        }
+        p {
+          text-align: center;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          strong {font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+          margin-bottom: 28px;
+        }
+        span {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
