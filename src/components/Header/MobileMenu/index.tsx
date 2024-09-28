@@ -1,6 +1,7 @@
 import { BurgerMenu } from '../BurgerMenu'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import iconInMobile from '../../../assets/img/skatepoint.png'
 
 export const MobileMenu = () => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +32,7 @@ export const MobileMenu = () => {
 							DONATE
 						</Link>
 						<div className="container_mob__wrapper__nav__about">
-							<img src="/src/assets/img/skatepoint.png" alt="" />
+							<img src={iconInMobile} alt="" />
 							<p><strong>SkatePoint</strong> - это увлекательный проект, созданный
 						энтузиастами для того чтобы скрасить ваше время препровождение,
 						намеренный в будущем стать очень многообещающим проектом.</p>
