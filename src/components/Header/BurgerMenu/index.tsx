@@ -13,7 +13,7 @@ export const BurgerMenu: FC<Props> = ({ isOpen, setIsOpen }) => {
 		<div className="burger" onClick={handleClick}>
 			<input type='checkbox' checked={isOpen} id='' />
 			<div className="burger__hamburger_lines">
-				<img src="/src/assets/img/menu.png" alt="menu" />
+				<img src="./src/assets/img/menu.png" alt="menu" />
 			</div>
 		</div>
 	)
