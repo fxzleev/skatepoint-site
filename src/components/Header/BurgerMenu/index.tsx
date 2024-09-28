@@ -1,5 +1,4 @@
 import { FC, Dispatch } from 'react'
-import menuIcon from '../../../assets/img/menu.png'
 
 type Props = {
 	isOpen: boolean
@@ -13,8 +12,10 @@ export const BurgerMenu: FC<Props> = ({ isOpen, setIsOpen }) => {
 	return (
 		<div className='burger' onClick={handleClick}>
 			<input type='checkbox' checked={isOpen} id='' />
-			<div className='burger__hamburger_lines'>
-				<img src={menuIcon} alt='menu' />
+			<div className='hamburger_lines'>
+				<span className='line line1'></span>
+				<span className='line line2'></span>
+				<span className='line line3'></span>
 			</div>
 		</div>
 	)

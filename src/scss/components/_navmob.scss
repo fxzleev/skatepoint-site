@@ -1,14 +1,17 @@
 .container_mob {
   min-height: 50px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__wrapper {
     width: 100vw;
     height: calc(100vh - 50px);
     position: fixed;
     top: 50px;
     left: 0;
-    animation: visible 0.5s linear;
     background: #525050;
+    animation: visible 0.5s linear;
     &__nav {
       margin: 0;
       display: grid;

@@ -16,13 +16,31 @@ export const MobileMenu = () => {
 			{isOpen && (
 				<div className='container_mob__wrapper'>
 					<nav className='container_mob__wrapper__nav'>
-						<NavLink className={({ isActive, isPending }) => isActive ? 'active' : isPending ? 'loading' : ''} to='/' onClick={handleLinkClick}>
+						<NavLink
+							className={({ isActive, isPending }) =>
+								isActive ? 'active' : isPending ? 'loading' : ''
+							}
+							to='/'
+							onClick={handleLinkClick}
+						>
 							HOME
 						</NavLink>
-						<NavLink className={({ isActive, isPending }) => isActive ? 'active' : isPending ? 'loading' : ''} to='/logs' onClick={handleLinkClick}>
+						<NavLink
+							className={({ isActive, isPending }) =>
+								isActive ? 'active' : isPending ? 'loading' : ''
+							}
+							to='/logs'
+							onClick={handleLinkClick}
+						>
 							LOGS
 						</NavLink>
-						<NavLink className={({ isActive, isPending }) => isActive ? 'active' : isPending ? 'loading' : ''} to='/support' onClick={handleLinkClick}>
+						<NavLink
+							className={({ isActive, isPending }) =>
+								isActive ? 'active' : isPending ? 'loading' : ''
+							}
+							to='/support'
+							onClick={handleLinkClick}
+						>
 							SUPPORT
 						</NavLink>
 						<Link
@@ -31,12 +49,15 @@ export const MobileMenu = () => {
 						>
 							DONATE
 						</Link>
-						<div className="container_mob__wrapper__nav__about">
-							<img src={iconInMobile} alt="" />
-							<p><strong>SkatePoint</strong> - это увлекательный проект, созданный
-						энтузиастами для того чтобы скрасить ваше время препровождение,
-						намеренный в будущем стать очень многообещающим проектом.</p>
-						<span>&copy; skatepoint.ru</span>
+						<div className='container_mob__wrapper__nav__about'>
+							<img src={iconInMobile} alt='' />
+							<p>
+								<strong>SkatePoint</strong> - это увлекательный проект,
+								созданный энтузиастами для того чтобы скрасить ваше время
+								препровождение, намеренный в будущем стать очень многообещающим
+								проектом.
+							</p>
+							<span>&copy; skatepoint.ru</span>
 						</div>
 					</nav>
 				</div>
